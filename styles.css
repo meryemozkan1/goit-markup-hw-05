@@ -763,18 +763,18 @@ body {
 }
 
 .input-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px; /* 16px soldan */
-  transform: translateY(-50%);
-  fill: var(--title-text-color); /* Varsayılan simge rengi */
-  /* D6: Simge rengi geçişi */
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-}
+    position: absolute;
+    top: 50%;
+    left: 16px; /* 16px soldan */
+    transform: translateY(-50%);
+    fill: var(--title-text-color); /* Varsayılan simge rengi */
+    /* D6: Simge rengi geçişi */
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+} 
 
-/* D3: Input Focus/Hover: Simge rengi değişimi */
-.form-input:focus + .input-icon {
-  fill: var(--accent-color);
+/* İkonun focus durumunda renk değiştirmesi */
+.input-wrap:focus-within .input-icon {
+    fill: var(--accent-color); 
 }
 
 /* Yorum Kutusu */
